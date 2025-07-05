@@ -1,0 +1,283 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>S.M Fabrication</title>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&display=swap" rel="stylesheet">
+  <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+  <style>
+    * {margin: 0; padding: 0; box-sizing: border-box;}
+    body {
+      font-family: 'Inter', sans-serif;
+      background: hsla(234, 35%, 76%, 0.432);
+      color: #1f2937;
+      scroll-behavior: smooth;
+    }
+
+    nav {
+      background: #ffffff;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      padding: 20px 30px;
+      position: sticky;
+      top: 0;
+      z-index: 999;
+      box-shadow: 0 4px 12px rgba(0, 0, 0, 0.06);
+    }
+
+    nav h1 {
+      font-size: 28px;
+      font-weight: 700;
+      color: #0f172a;
+    }
+
+    nav a {
+      margin-left: 30px;
+      text-decoration: none;
+      color: #006aff;
+      font-weight: 600;
+      transition: color 0.3s ease;
+    }
+
+    nav a:hover {
+      color: #8e9fc5;
+    }
+
+    .hero {
+      text-align: center;
+      padding: 140px 20px 100px;
+      background: url('Blue gradient defocused abstract background _ Premium Photo.jpg') center/cover no-repeat;
+      background-blend-mode: overlay;
+      background-color: rgb(204, 219, 224);
+    }
+
+    .hero h2 {
+      font-size: 48px;
+      font-weight: 700;
+      color: #1e293b;
+    }
+
+    .hero p {
+      font-size: 20px;
+      color: #64748b;
+      margin-top: 16px;
+    }
+
+    .btn {
+      margin-top: 40px;
+      padding: 14px 36px;
+      font-size: 16px;
+      font-weight: 600;
+      background: #2563eb;
+      color: #fff;
+      border: none;
+      border-radius: 8px;
+      cursor: pointer;
+      transition: background 0.3s ease;
+    }
+
+    .btn:hover {
+      background: #3d47a7;
+    }
+
+    .section {
+      padding: 100px 20px;
+      text-align: center;
+      background: #ffffff;
+    }
+
+    .section:nth-of-type(even) {
+      background: #f8fafc;
+    }
+
+    .section h2 {
+      font-size: 36px;
+      margin-bottom: 40px;
+      color: #0f172a;
+    }
+
+    .cards {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: center;
+      gap: 40px;
+    }
+
+    .card {
+      background: #fff;
+      padding: 20px;
+      width: 320px;
+      border-radius: 12px;
+      box-shadow: 0 6px 24px rgba(0, 0, 0, 0.06);
+      transition: transform 0.3s ease, box-shadow 0.3s ease;
+    }
+
+    .card:hover {
+      transform: translateY(-6px);
+      box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
+    }
+
+    .card img {
+      width: 100%;
+      height: 180px;
+      object-fit: cover;
+      border-radius: 10px;
+      margin-bottom: 15px;
+    }
+
+    .card h3 {
+      font-size: 22px;
+      color: #2563eb;
+      margin-bottom: 12px;
+    }
+
+    .card p {
+      font-size: 15px;
+      color: #475569;
+    }
+
+    .badge-strip {
+      background: #30d821;
+      color: rgb(255, 255, 255);
+      padding: 15px 0;
+      font-weight: 700;
+      letter-spacing: 0.6px;
+      text-align: center;
+      font-size: 18px;
+    }
+
+    .logos {
+      display: flex;
+      justify-content: center;
+      gap: 40px;
+      flex-wrap: wrap;
+      margin-top: 20px;
+    }
+
+    .logos img {
+      height: 40px;
+      filter: grayscale(1) brightness(1.2);
+      opacity: 0.8;
+      transition: 0.3s;
+    }
+
+    .logos img:hover {
+      filter: none;
+      opacity: 1;
+    }
+
+    .why-us {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: center;
+      gap: 40px;
+      margin-top: 30px;
+    }
+
+    .why-us div {
+      max-width: 280px;
+      background: #ffffff;
+      padding: 24px;
+      border-radius: 10px;
+      font-weight: 600;
+    }
+
+    footer {
+      background: #000000;
+      color: #cbd5e1;
+      text-align: center;
+      padding: 60px 20px;
+      font-size: 15px;
+    }
+
+    footer a {
+      color: #feffff;
+      text-decoration: none;
+    }
+  </style>
+</head>
+<body>
+
+  <nav>
+    <h1>Mazher Shaikh</h1>
+    <div>
+      <a href="#">Home</a>
+      <a href="#services">Services</a>
+      <a href="#quote">Quote</a>
+      <a href="#contact">Contact</a>
+    </div>
+  </nav>
+
+  <section class="hero" data-aos="fade-up">
+    <h2>S.M FABRICATION</h2>
+    <p>ALL TYPES OF "WELDING" SERVICES AVAILABLE</p>
+    <button class="btn" onclick="window.open('https://wa.me/917058555259')">Request a Quote</button>
+  </section>
+
+  <div class="badge-strip" data-aos="zoom-in">
+    Trusted by 1000+ Clients
+  </div>
+
+  <section class="section" id="services">
+
+    <h2 data-aos="fade-up">Our Services</h2>
+    <div class="cards">
+      <div class="card" data-aos="zoom-in">
+        <img src="shade.jpg" alt="Balcony Shade">
+        <h3>Balcony Shade</h3>
+        <p>Stylish and weatherproof shades for balconies with premium finish.</p>
+      </div>
+      <div class="card" data-aos="zoom-in">
+        <img src="balcony grill.jpg" alt="Balcony Grill">
+        <h3>Balcony Grill</h3>
+        <p>Secure and modern grill designs for safety and aesthetics.</p>
+      </div>
+      <div class="card" data-aos="zoom-in">
+        <img src="door.jpg" alt="Safety Door">
+        <h3>Safety Door</h3>
+        <p>Strong, custom-built safety doors with high security and style.</p>
+      </div>
+      <div class="card" data-aos="zoom-in">
+        <img src="window.jpg" alt="Window Frame">
+        <h3>Window Frame</h3>
+        <p>Durable and perfectly measured window frames for every type.</p>
+      </div>
+      <div class="card" data-aos="zoom-in">
+        <img src="welding.jpg" alt="Welding Works">
+        <h3>All Type of Welding Works</h3>
+        <p>Precision welding services for residential, commercial & industrial needs.</p>
+      </div>
+    </div>
+  </section>
+
+  <section class="section">
+    <h2 data-aos="fade-up">Why Choose Us?</h2>
+    <div class="why-us">
+      <div data-aos="fade-right">✔ 20+ Years Industry Experience</div>
+      <div data-aos="fade-up">✔ Fast Services With Best Quality Work</div>
+      <div data-aos="fade-left">✔ Competitive Pricing & Quality</div>
+    </div>
+  </section>
+
+  <section class="section" id="quote">
+    <h2 data-aos="fade-up">Let's Build Together</h2>
+    <p data-aos="fade-up">FOR ANY CUSTOM OR PERSONAL WORKS DM US ON "WHATSAPP"</p>
+    <button class="btn" data-aos="fade-up" onclick="window.open('https://wa.me/917058555259')">DM Now</button>
+  </section>
+
+  <section class="section" id="contact">
+    <h2 data-aos="fade-up">Contact Us</h2>
+    <p>Phone: <a href="tel:+919607865725">+91 9607865725</a></p>
+    <p>Shop: Pune,Aurangabad</p>
+  </section>
+
+  <footer>
+    &copy; 2025 S.M Fabrication. A Professional Fabricator In Pune & Aurangabad. All Types Of Services
+  </footer>
+
+  <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+  <script>AOS.init();</script>
+</body>
+</html>
